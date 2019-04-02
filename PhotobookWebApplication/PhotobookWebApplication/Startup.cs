@@ -28,16 +28,9 @@ namespace PhotobookWebApplication
 
             app.UseStaticFiles();
 
-            app.Run(async (context) =>
+            app.UseSpa(spa =>
             {
-                string[] lines = File.ReadAllLines("wwwroot/index.html");
-                var body = "";
-
-                foreach (var line in lines)
-                {
-                    body += line;
-                }
-                await context.Response.WriteAsync(body);
+                spa.Options.SourcePath = "index.html";
             });
         }
     }
