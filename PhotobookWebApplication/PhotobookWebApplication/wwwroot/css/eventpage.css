@@ -19,6 +19,7 @@
 
 .alignleft {
     float: left;
+    margin: auto;
 }
 
 .alignright {
