@@ -1,11 +1,17 @@
 ﻿body {
     font-size: 1.5rem;
-    width: 100%;
+    width: 99%;
     background-image: url('../images/loginpagebackground.jpg');
     background-repeat: no-repeat;
     --background-size: 100%;
     background-size: 1600px 1200px;
-    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topnav img {
+    padding: 5px 16px;
+    width:2%;
+    height:2%;
 }
 
 .topnav {
@@ -28,6 +34,7 @@
 
 .topnav a {
     --float: left;
+    cursor: default;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
